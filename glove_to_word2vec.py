@@ -3,7 +3,7 @@ from gensim.models import KeyedVectors
 
 glove_file = './output/vectors.txt'
 tmp_file = "./output/glove.tmp"
-vector_file = './output/glove.bin'
+vector_file = './output/glove.1.8G.normalized.bin'
 
 # call glove2word2vec script
 # default way (through CLI): python -m gensim.scripts.glove2word2vec --input <glove_file> --output <w2v_file>

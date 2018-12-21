@@ -8,7 +8,7 @@ output_filepath = "/home/anhv/PycharmProjects/undertheseanlp/word_embeddings/egs
 if exists(output_filepath):
     remove(output_filepath)
 output = open(output_filepath, "a")
-for i, text in enumerate(open(input)):
+for i, text in enumerate(open(input_filepath)):
     if i % 100000 == 0:
         print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'), i)
     text = text.strip()
